@@ -28,12 +28,6 @@ I could not load the tap values with the readmemb also I could not assign a bloc
 
 Simulation output
 
-![alt text](image.png)
-
-![alt text](image-1.png)
-
-![alt text](image-2.png)
-
 
 ![alt text](image-5.png)
 
