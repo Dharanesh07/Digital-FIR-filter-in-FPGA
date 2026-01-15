@@ -1,0 +1,47 @@
+module filter_input_fifo #(
+    parameter SIG_WIDTH = 16
+) (
+    input i_clk,
+    input i_rstn,
+    input i_ff_empty,
+    input [SIG_WIDTH-1:0] fifo_dataout,
+    output reg o_fifo_rden,
+    output wire [SIG_WIDTH-1:0] sig_out
+);
+
+  reg [SIG_WIDTH-1:0] buffer;
+  reg [2:0] r_state;
+  parameter CHECK_EMPTY = 3'b000;
+  parameter READ_FIFO = 3'b001;
+
+
+  always @(posedge i_clk) begin
+    if (!i_rstn) begin
+      r_state <= CHECK_EMPTY;
+      buffer <= 0;
+      o_fifo_rden <= 1'b0;
+    end else begin
+      case (r_state)
+
+        CHECK_EMPTY: begin
+          if (!i_ff_empty) begin
+            o_fifo_rden <= 1'b1;
+            r_state <= READ_FIFO;
+          end else r_state <= CHECK_EMPTY;
+        end
+
+        READ_FIFO: begin
+          o_fifo_rden <= 1'b0;
+          buffer <= fifo_dataout;
+          r_state <= CHECK_EMPTY;
+        end
+
+        default: begin
+          r_state <= CHECK_EMPTY;
+        end
+      endcase
+    end
+
+  end
+  assign sig_out = buffer;
+endmodule
