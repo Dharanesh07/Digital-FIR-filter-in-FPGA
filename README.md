@@ -3,6 +3,7 @@ Design, Implementation and Validation of Digital Filter on Lattice iCE40UP5k FPG
 
 This project involves processing the sample signal from a sensor to retrieve the data present in out with the help of a digital filter. 
 
+<img src="Sample_signal_bram/python_processing/Input_sig.png">
 
 To perform MAC operations, the FPGA's on board DSP blocks are used. 
 
