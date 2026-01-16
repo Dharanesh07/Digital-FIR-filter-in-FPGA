@@ -18,8 +18,8 @@ To perform MAC operations, the FPGA's on board DSP blocks are used.
 
 📌 Results
 
-The filter was verified via:
-Functional simulation
+The filter was verified via: 
+Functional simulation 
 Successful programming and testing on an iCE40UP5k FPGA
 
 Note: This project was developed as part of my project work at TUHH and demonstrates practical skills in FPGA development and signal processing.
