@@ -1,0 +1,19 @@
+Each iCE40 device includes multiple high-speed synchronous EBRs, each 4Kbit in size. 
+A single iCE40 device integrates between eight and 32 such blocks. Each EBR is a 256-word deep by 16-bit wide.
+
+EBR Memory Blocks = 30
+EBR Memory Bits (kbits) = 120
+
+Each EBR can be configured into a RAM block of size 256x16, 512x8, 1024x4 or 2048x2.
+
+So each block will have 4 Kbits of memory which is 256 x 16bits.
+
+Coeff:     1 EBR - 64 x 16 bits (256 x 16) bits
+Shift reg: 1 EBR - 64 x 16 bits (256 x 16) bits
+
+Sample Signal - 2000/256 = 8 EBR
+
+Async FIFO - 1000*2/256 (since we need 32 bit registers so multiply by 2) = 8 EBR
+
+Can I implement 32 bit buffer with this BRAM in ice40up5k along with yosys synthesis tool chain?
+
