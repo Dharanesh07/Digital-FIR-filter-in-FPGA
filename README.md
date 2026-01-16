@@ -12,13 +12,16 @@ This project demonstrates digital signal processing in hardware using fixed-poin
 - Clock domain crossing logic  
 - Validated its functionality on Lattice iCE40UP5k FPGA  
 
-Explored different filter architecture to use in iCE40UP5K FPGA
+Explored different filter architecture to use in iCE40UP5K FPGA and compared the tradeoffs,
 - [Transposed FIR structure](Transposed_FIR) 
 - [FIR Multiplexed structure](FIR_multiplexed)
 
+### Input signal
 <img width="500" height="600" src="FIR_multiplexed/python_processing/Input_sig.png">
 
-To perform MAC operations, the FPGA's on board DSP blocks are used. 
+### Filtered Output signal
+<img width="700" height="600" alt="image" src="https://github.com/user-attachments/assets/48dd263e-3e39-4c11-8358-2b94561d412c" />
+
 
 
 
