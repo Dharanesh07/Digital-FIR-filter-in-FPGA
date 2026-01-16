@@ -13,10 +13,10 @@ This project demonstrates digital signal processing in hardware using fixed-poin
 - Validated its functionality on Lattice iCE40UP5k FPGA  
 
 Explored different filter architecture to use in iCE40UP5K FPGA
-- [Transposed FIR structure](transp_fir_synth) 
-- [FIR Multiplexed structure](Sample_signal_bram)
+- [Transposed FIR structure](Transposed_FIR) 
+- [FIR Multiplexed structure](FIR_multiplexed)
 
-<img width="500" height="600" src="Sample_signal_bram/python_processing/Input_sig.png">
+<img width="500" height="600" src="FIR_multiplexed/python_processing/Input_sig.png">
 
 To perform MAC operations, the FPGA's on board DSP blocks are used. 
 
