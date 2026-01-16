@@ -2,9 +2,11 @@
 
 ![alt text](Block_Diagram.png)
 
+## FIR Multiplex architecture
 
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/650052c2-b7d0-45c6-b123-5ceedb6f549b" />
 
+## FIR Multiplex Program Flow
 
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/6633b0d6-f781-48a9-a5e3-e84e202c371e" />
 
